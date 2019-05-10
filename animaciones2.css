@@ -1,0 +1,191 @@
+/* animaciones */
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: rgba(0,0,0,1);
+	font-size: 80px;
+	transition: color 200ms;
+}
+
+h1:hover {
+	color: rgba(0,0,0,0.5);
+}
+
+.ul {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background: black;	
+}
+
+.li a {
+	display: block;
+	padding: 20px;
+	text-transform: uppercase;
+	list-style-type: none;
+	color: rgba(255,255,255);
+	transition: color 200ms ease-in-out;
+	
+}
+
+.li a:hover {
+	color: rgba(255,255,255,0.5)
+}
+
+
+
+.cards {
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	width: 200px;
+	height: 400px;
+	background: lightblue;
+	margin: 20px;
+	/* el transition lo hacemos sobre el elemento que va a transicionar, no en el hover */
+	transition: box-shadow 200ms ease-in-out;
+	display: block;
+}
+
+
+.card:hover {
+	box-shadow: 3px 3px 20px 3px rgba(0,0,0,0.4);
+	/* desplazamiento de caja en eje horizontal, en vertical, desenfoque, cuanto se esparce el color.
+		ojo que en el eje y es positivo para abajo (como una venta)*/
+	
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background: rgba(255,0,0,0.5);
+	/* NUNCA PONER ESPACIO ENTRE RGBA Y EL PARÉNTESIS */
+	margin: 10px;
+}
+
+
+.transform1 {
+	transition: transform 200ms ease-in-out;
+}
+.transform1:hover {
+	/* transform: translate(20px, -20px); ESTA ES OTRA FORMA DE ESCRIBRI */
+	transform: translateX(20px) translateY(20px);
+}
+/* rgba le agrega un canal más que es el opacity. va de 0 a 1. Uso 0.5*/
+
+
+
+.transform2 {
+	transition: transform 500ms linear;
+	/* acá llamamos transform, siempre */
+}
+.transform2:hover {
+	transform: scale(1.5);
+}
+
+
+
+.transform3 {
+	transition: transform 300ms is linear;
+}
+.transform3:hover {
+	transform: rotate(45deg);
+}
+
+.overflow-wrapper {
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+	margin-left: 300px;
+	overflow: scroll;
+	margin: auto;
+	/* con esta propiedad oculto el contenido que me excede */
+}
+
+
+.ejercicio {
+	background-color: gold;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid rgba(0,0,0,0.5);
+	margin: auto;
+}
+
+.ejercicio2 {
+	background-image: url(https://www.hogarmania.com/archivos/201204/estrenimiento-gato-bebe2-xl-668x400x80xX.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transition: transform 200ms;
+	
+}
+
+
+
+.ejercicio2:hover {
+	transform: scale(1.5);
+}
+
+
+
+.ejercicio_padre {
+	background-color: gold;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid rgba(0,0,0,0.5);
+	margin: auto;
+}
+
+.ejercicio_hijo {
+
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transition: transform 200ms;
+	
+}
+
+
+
+.ejercicio_hijo:hover {
+	transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
